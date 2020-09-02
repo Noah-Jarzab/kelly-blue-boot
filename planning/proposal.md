@@ -12,7 +12,7 @@ Kelley Blue Boot is an app to show the user market values of shoes and build a c
 
 ## Wire Frames
 
-![Web/Browser wire frame](/Kelly_Blue_Boot1.jpg)
+![Web/Browser wire frame](/images/Kelly_Blue_Boot1.jpg)
 
 ## User Stories
 
