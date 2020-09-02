@@ -12,7 +12,7 @@ Kelley Blue Boot is an app to show the user market values of shoes and build a c
 
 ## Wire Frames
 
-
+![Web/Browser wire frame](/Kelly_Blue_Boot1.jpg)
 
 ## User Stories
 
@@ -46,7 +46,7 @@ Component | Description
 App | This will access the API and include React Router
 Header | This will be always visible and have a general navigation as well as a Login/UserProfile link
 Home | This will be the landing page with general links to broad lists and/or groups of shoes from the database
-Browse | This page will bring up an interactive browsing function where you can filter shoes based on a variety of values
+Browse | This page will bring up an interactive browsing function where you can filter shoes based on a variety of values. The landing page will filter alphabetically through all the shoes automatically
 Collections | This will bring up specific categorical buttons to browse shoes within certain parameters
 Collection | This will contain the data of each selected collection in the form of shoe "cards"
 Shoe | This page will have all the detailed information about the shoe selected as well as buttons to add it to personal collections
