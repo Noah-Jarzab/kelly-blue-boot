@@ -5,7 +5,8 @@ class Home extends Component {
     render() {
         return (
             <div>
-
+                {console.log(this.props)}
+                <h2>{this.props.shoes.name}</h2>
             </div>
         )
     }

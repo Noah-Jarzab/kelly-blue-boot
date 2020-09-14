@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Shoes from './Shoes';
+// import React, { Component } from 'react';
+// import Shoes from './Shoes';
 
-class Shoe extends Component {
-    
-}
+// class Shoe extends Component {
 
-export default Shoes;
+// }
+
+// export default Shoes;
