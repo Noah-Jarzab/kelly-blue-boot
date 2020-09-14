@@ -17,10 +17,12 @@ class App extends Component {
     fetch('https://kbbbackend.herokuapp.com/shoes?format=api')
       .then((res) => res.json())
       .then((json) => {
-        this.setState({
-          shoes: json.shoes
+        this.setState(() => {
+          return {
+            shoes: json.shoes
+          };
         });
-      })
+      });
   }
 	render() {
 		return (
@@ -31,7 +33,7 @@ class App extends Component {
 					exact
 					path='/'
 					render={() => {
-						return <Home shoes={this.state}
+						return <Home shoes={this.state.data}
             />;
 					}}
 				/>
@@ -39,7 +41,7 @@ class App extends Component {
 					exact
 					path='/shoes'
 					render={() => {
-						return <Shoes />;
+						return <Shoes/>;
 					}}
 				/>
 			</main>

@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
     render() {
         return (
-					<nav>
+					<nav className='navBar'>
 						<Link to='/'>
-							<img src={logo} alt='logo'/>
+							<img className='logo' src={logo} alt='logo'/>
 						</Link>
+                        <Link to='/shoes' style={{textDecoration: 'none'}}>Browse Shoes</Link>
 					</nav>
 				);
     }

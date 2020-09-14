@@ -6,7 +6,7 @@ class Home extends Component {
         return (
             <div>
                 {console.log(this.props)}
-                <h2>{this.props.shoes.name}</h2>
+                <h2>{this.props.data}</h2>
             </div>
         )
     }

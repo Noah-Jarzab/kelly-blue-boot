@@ -1,7 +1,23 @@
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
 
-// class Shoes extends Component {
+class Shoes extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            shoes: [],
+        };
+    }
 
-// }
+    componentDidMount() {
+        fetch('https://kbbbackend/heroku.com/shoes?format=api');
+    }
 
-// export default Shoes;
+    render() {
+        return(
+        <div>
+            <p>Test</p>
+        </div>
+        )}
+}
+
+export default Shoes;
