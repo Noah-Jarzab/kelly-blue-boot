@@ -8,7 +8,7 @@ const Header = () => {
 			<Link to='/'>
 				<img className='logo' src={logo} alt='logo' />
 			</Link>
-			<Link to='/shoes' style={{ textDecoration: 'none' }}>
+			<Link to='/shoes' style={{ textDecoration: 'none', color: 'purple' }}>
 				Browse Shoes
 			</Link>
 		</nav>
