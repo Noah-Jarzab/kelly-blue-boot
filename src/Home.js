@@ -9,7 +9,7 @@ class Home extends Component {
                 {console.log(this.props)}
                 <CarouselHome shoes={this.props.shoes} />
                 <br></br>
-                <h4>About</h4>
+                <h4 className='about'>About</h4>
                 <p>Kelly Blue Boot is a resource designed to see the MSRP and other general information about various types of shoes.</p>
             </div>
         )
