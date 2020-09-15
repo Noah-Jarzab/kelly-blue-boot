@@ -30,7 +30,7 @@ class Shoes extends Component {
 	};
 
 	getDetail = (id) => {
-		fetch(`https://kbbbackend.herokuapp.com/shoes${id}`)
+		fetch(`https://kbbbackend.herokuapp.com/shoes/${id}`)
 			.then((res) => res.json())
 			.then((res) => {
 				this.setState({
@@ -57,10 +57,10 @@ class Shoes extends Component {
 	// }
 
 	render() {
-		if (this.props.image) {
+		if (this.props.shoes) {
 			return (
 				<CardColumns>
-					{this.props.image.map((shoes) => {
+					{this.props.shoes.map((shoes) => {
 						return (
 							<Card key={shoes.id}>
 								{shoes.image && (

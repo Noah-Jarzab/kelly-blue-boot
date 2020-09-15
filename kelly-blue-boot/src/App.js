@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Shoes from './Shoes';
-import Shoe from './Shoe';
+// import Shoe from './Shoe';
 import './App.css';
 
 class App extends Component {
@@ -30,21 +30,14 @@ class App extends Component {
 					exact
 					path='/'
 					render={() => {
-						return <Home shoes={this.state[0]}
-            />;
+						return <Home />;
 					}}
 				/>
 				<Route
 					exact
 					path='/shoes'
 					render={() => {
-						return <Shoes shoes={this.state}/>;
-					}}
-				/>
-				<Route
-					exact path='/shoe'
-					render={(routerProps) => {
-						return <Shoe match={routerProps.match}/>;
+						return <Shoes shoes={this.state.shoes}/>;
 					}}
 				/>
 			</main>
