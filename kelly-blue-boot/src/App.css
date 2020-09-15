@@ -1,12 +1,18 @@
 .logo {
-  max-height: 120px;
+  max-height: 130px;
   max-width: 175px;
   justify-content: left;
 }
 
 .navBar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background: rgb(2, 2, 61);
+  padding: 2rem;
+  background: rgba(21, 21, 223, 0.808);
+}
+
+.shoeImage {
+  max-height: 250px;
+  max-width: 250px;
 }

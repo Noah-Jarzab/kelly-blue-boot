@@ -5,8 +5,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                {console.log(this.props)}
-                <h2>{this.props.data}</h2>
+                
             </div>
         )
     }

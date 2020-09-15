@@ -14,26 +14,23 @@ class App extends Component {
 		};
   }
   componentDidMount() {
-    fetch('https://kbbbackend.herokuapp.com/shoes?format=api')
+    fetch('https://kbbbackend.herokuapp.com/shoes')
       .then((res) => res.json())
       .then((json) => {
-        this.setState(() => {
-          return {
-            shoes: json.shoes
-          };
+        this.setState({
+            shoes: json
+          });
         });
-      });
-  }
+	}
 	render() {
 		return (
 			<main className='App'>
-        {console.log(this.state)}
 				<Header />
 				<Route
 					exact
 					path='/'
 					render={() => {
-						return <Home shoes={this.state.data}
+						return <Home shoes={this.state[0]}
             />;
 					}}
 				/>
