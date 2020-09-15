@@ -30,7 +30,7 @@ class App extends Component {
 					exact
 					path='/'
 					render={() => {
-						return <Home />;
+						return <Home shoes={this.state.shoes} />;
 					}}
 				/>
 				<Route
