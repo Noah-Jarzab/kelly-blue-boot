@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 // import Shoes from './Shoes';
 
-const Shoe = ({ error, objectDetail, show, handleClose }) => {
+const Shoe = ({ error, shoe, show, handleClose }) => {
     if (!error) {
         return (
             <Modal
@@ -14,21 +14,22 @@ const Shoe = ({ error, objectDetail, show, handleClose }) => {
                 size='xl'>
                     <Modal.Header closeButton>
                         <Modal.Title>
-                            {objectDetail.shoes.name}
+                            {shoe.name}
                         </Modal.Title>
                     </Modal.Header>
-                    {objectDetail.shoes.image && (
-                        <Image fluid src={objectDetail.shoes.image} />
+                    {shoe.image && (
+                        <Image fluid src={shoe.image} />
                     )}
                     <Modal.Body>
-                        <p>{objectDetail.shoes.manufacturer}</p>
+                        <p>{shoe.manufacturer}</p>
                         <p>
-                        Description:{''}{objectDetail.shoes.description ? (
-                            objectDetail.shoes.description
+                        Description: {''}{shoe.description ? (
+                            shoe.description
                         ) : (
                             <span style={{ fontStyle: 'italic' }}>Not Available</span>
                         )}
                         </p>
+                        <p>{shoe.msrp}</p>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button

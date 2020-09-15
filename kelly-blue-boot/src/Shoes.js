@@ -44,18 +44,6 @@ class Shoes extends Component {
 			});
 	};
 
-	// componentDidMount() {
-	// 	fetch('https://kbbbackend.herokuapp.com/shoes')
-	// 		.then((res) => res.json())
-	// 		.then((json) => {
-	// 			this.setState(() => {
-	// 				return {
-	// 					shoes: json,
-	// 				};
-	// 			});
-	// 		});
-	// }
-
 	render() {
 		if (this.props.shoes) {
 			return (
